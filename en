@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru-AE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Properties UAE - Недвижимость в Дубае | Квартиры, Виллы и Коммерческая Недвижимость в ОАЭ</title>
+    <meta name="description" content="Премиальная недвижимость в Дубае от Skyline Properties UAE. Эксклюзивные квартиры, виллы и коммерческая недвижимость в ОАЭ. Помощь русскоязычных агентов, полное сопровождение сделок.">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.skylinepropertiesuae.com/ru-ae">
+    
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en-AE" href="https://www.skylinepropertiesuae.com/en-ae">
+    <link rel="alternate" hreflang="ru-AE" href="https://www.skylinepropertiesuae.com/ru-ae">
+    <link rel="alternate" hreflang="ar-AE" href="https://www.skylinepropertiesuae.com/ar-ae">
+    <link rel="alternate" hreflang="x-default" href="https://www.skylinepropertiesuae.com/en-ae">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: auto;
+            margin-right: 2rem;
+        }
+        
+        .lang-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .lang-link:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .lang-link.active {
+            background: #ffd700;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .features {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e3c72;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card h3 {
+            color: #2a5298;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .feature-list li {
+            padding: 0.3rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .contact-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-card {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .contact-card h3 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-card p {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .contact-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 1rem 0.5rem 1rem 0;
+        }
+        
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .info-box h3 {
+            color: #1565c0;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #1e3c72;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #ffd700;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #2a5298;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            transition: background 0.3s;
+        }
+        
+        .social-icon:hover {
+            background: #ffd700;
+            color: #1e3c72;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .language-switcher {
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Skyline Properties UAE</div>
+                <div class="language-switcher">
+                    <a href="https://www.skylinepropertiesuae.com/en-ae" class="lang-link">EN</a>
+                    <a href="https://www.skylinepropertiesuae.com/ru-ae" class="lang-link active">RU</a>
+                    <a href="https://www.skylinepropertiesuae.com/ar-ae" class="lang-link">AR</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#properties">Объекты</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Премиальная Недвижимость в Дубае</h1>
+                <p>Эксклюзивные квартиры, виллы и коммерческая недвижимость в ОАЭ с полным сопровождением на русском языке</p>
+                <a href="#properties" class="cta-button">Посмотреть Объекты</a>
+            </div>
+        </section>
+
+        <section class="features" id="properties">
+            <div class="container">
+                <h2 class="section-title">Избранные Объекты Недвижимости</h2>
+                
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Элитные Апартаменты</h3>
+                        <p>Роскошные апартаменты в самых престижных районах Дубая. Современный дизайн, премиальная отделка и инфраструктура мирового класса — бассейны, фитнес-центры, охрана 24/7 и консьерж-сервис.</p>
+                        <p class="price">От AED 1,200,000 (د.إ 1,200,000)</p>
+                        <p><strong>Районы:</strong> Даунтаун Дубай, Бизнес Бей, Дубай Марина</p>
+                        <ul class="feature-list">
+                            <li>1-4 спальни, площадь от 65 м²</li>
+                            <li>Система умный дом</li>
+                            <li>Панорамные виды на город</li>
+                            <li>Рассрочка от застройщика</li>
+                        </ul>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Виллы на Берегу Моря</h3>
+                        <p>Эксклюзивные виллы с собственным выходом к пляжу. Просторные сады, частные бассейны и захватывающие виды на море. Идеальное решение для семей, ценящих приватность и комфорт в самых престижных локациях ОАЭ.</p>
+                        <p class="price">От AED 8,500,000 (د.إ 8,500,000)</p>
+                        <p><strong>Районы:</strong> Палм Джумейра, Джумейра Бей Айленд, Дубай Хиллс</p>
+                        <ul class="feature-list">
+                            <li>4-7 спален, от 400 м²</li>
+                            <li>Собственный бассейн и сад</li>
+                            <li>Прямой доступ к пляжу</li>
+                            <li>Парковка на несколько авто</li>
+                        </ul>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Коммерческая Недвижимость</h3>
+                        <p>Первоклассные коммерческие объекты в деловых центрах Дубая. Офисы, торговые площади и showroom-ы премиум-класса для развития вашего бизнеса в сердце международного финансового центра.</p>
+                        <p class="price">От AED 2,800,000 (د.إ 2,800,000)</p>
+                        <p><strong>Районы:</strong> DIFC, Бизнес Бей, Джумейра Лейкс Тауэрс</p>
+                        <ul class="feature-list">
+                            <li>Гибкая планировка помещений</li>
+                            <li>Современная IT-инфраструктура</li>
+                            <li>Центральные локации</li>
+                            <li>Высокий потенциал ROI</li>
+                        </ul>
+                    </article>
+                </div>
+                
+                <div style="text-align: center;">
+                    <span class="badge">✓ Агентство с лицензией RERA</span>
+                    <span class="badge">✓ Бесплатная консультация</span>
+                    <span class="badge">✓ Русскоязычные специалисты</span>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Помощь в Покупке Недвижимости в ОАЭ</h3>
+                    <p>Наши русскоязычные специалисты обеспечат полное сопровождение сделки: от подбора объекта до получения ключей. Мы поможем с оформлением ипотеки, регистрацией документов, открытием счета в банке и получением резидентской визы. Юридическая поддержка на всех этапах.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Связаться с Нами</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>📞 Телефон</h3>
+                        <p><strong>+971 4 555 1234</strong></p>
+                        <p>Звоните в рабочее время для консультации</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>💬 WhatsApp</h3>
+                        <p><strong>+971 50 123 4567</strong></p>
+                        <p>Быстрые ответы на все ваши вопросы о недвижимости</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>✉️ Email</h3>
+                        <p><a href="mailto:russian@skylinepropertiesuae.com"><strong>russian@skylinepropertiesuae.com</strong></a></p>
+                        <p>Русскоязычная поддержка клиентов</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>👤 Русскоязычный Агент</h3>
+                        <p><strong>Анна Соколова</strong></p>
+                        <p>Старший менеджер по работе с русскоязычными клиентами</p>
+                        <p>WhatsApp: +971 55 987 6543</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>📍 Адрес Офиса</h3>
+                        <p><strong>Skyline Properties UAE</strong></p>
+                        <p>Офис 2401, Marina Plaza<br>Дубай Марина, Дубай<br>Объединённые Арабские Эмираты</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>🕐 Часы Работы</h3>
+                        <p><strong>Время Персидского залива (GST)</strong></p>
+                        <p>Воскресенье - Четверг: 9:00 - 18:00<br>
+                        Суббота: 10:00 - 16:00<br>
+                        Пятница: Выходной</p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">GST = МСК - 1 час</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
+                    <h3 style="color: #1e3c72; margin-bottom: 1rem;">🎁 Бесплатная Консультация</h3>
+                    <p style="font-size: 1.1rem; color: #555;">Запишитесь на бесплатную консультацию с нашими экспертами. Мы подберём для вас идеальный объект недвижимости в ОАЭ и проконсультируем по всем вопросам инвестиций в Дубае.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О Компании</h4>
+                    <p>Skyline Properties UAE — лицензированное агентство недвижимости (RERA) специализирующееся на элитных апартаментах, виллах и коммерческой недвижимости в Дубае и ОАЭ.</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Полное сопровождение сделок на русском языке.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Быстрые Ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#properties">Каталог Объектов</a></li>
+                        <li><a href="#about">О Компании</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#">Гид Покупателя</a></li>
+                        <li><a href="#">Инвестиции в Дубае</a></li>
+                        <li><a href="#">Ипотека для Иностранцев</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Типы Недвижимости</h4>
+                    <ul>
+                        <li><a href="#">Элитные Апартаменты</a></li>
+                        <li><a href="#">Виллы на Берегу</a></li>
+                        <li><a href="#">Коммерческая Недвижимость</a></li>
+                        <li><a href="#">Пентхаусы</a></li>
+                        <li><a href="#">Инвестиционные Объекты</a></li>
+                        <li><a href="#">Недвижимость Off-Plan</a></li>
+                        <li><a href="#">Готовая Недвижимость</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Мы в Соцсетях</h4>
+                    <p>Следите за новыми объектами и актуальными новостями рынка недвижимости ОАЭ.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-icon" aria-label="Telegram">✈️</a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Skyline Properties UAE. Все права защищены. | Лицензия RERA | Политика Конфиденциальности | Условия Использования</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
